@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Gothic", sans-serif;
+}
+
+body{
+    display: flex;
+    background-color: #303030;
+    
+}
+
+/* Mudar position (right e bottom) */
+main{
+    position: absolute;
+}
+
+#nome_logotipo{
+    font-size: 25px;
+}
+
+#separação{
+    margin-bottom: 35px;
+}
+
+#conteudo_sidebar{
+    padding-left: 16px;
+    padding-top: 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#side_items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.items{
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.items.active{
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+    
+}
+
+.items a:hover:not(.active){
+    color: #B4BFF5;
+    transition: 0.5s;
+}
+
+.items:hover:not(.active){
+    background-color: #8b8b8b;
+    color: #7789D8;
+    transition: 0.5s;
+}
+
+.items a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.items i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valorant_div{
+    display: flex;
+    background-color: #E52842;
+    width: 155px;
+    height:40px;
+    text-align: center;
+    margin-left: 4px;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.valorant_item img{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.valorant_div:hover{
+    background-color: #ff5260;
+    transition: 0.5s;
+    
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #707070;
+    height: 100vh;
+    box-shadow: 5px 0px 0px #7789D8;
+    position: fixed;
+}
+
+#logotipo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+#logar{
+    border-top: 1px;
+}
+
+#btn{
+    width: 197px;
+    background-color: #303030;
+    display: flex;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    gap: 13px;
+    align-items: center;
+    text-align: start;
+}
+
+#login:hover:not(.active){
+    color: #6c6cff;
+    transition: 0.5s;
+}
+
+#logar_descrição{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#login{
+    color: #94a6f8;
+    cursor: pointer;
+    font-size: 17px;
+    width: max-content;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#perfil_image{
+    width: 45px;
+    cursor: pointer;
+}
+
+#logar_informações{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+header{
+    background-color: #707070;
+    box-shadow: 0px 10px 0px #7789D8;
+    margin-left: 200px;
+    width: 1000px;
+}
+
+.nav_bar{
+    display: flex;
+    padding: 20px 30px;
+}
+
+.perfil_header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.suporte{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    justify-content: flex-end;
+    
+}
+
+.suporte ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.separação_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suporte_link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_item{
+    margin: 5px;
+}
+
+.nav_link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+}
+
+.aplicativo button{
+    background-color: #E52842;
+    border: none;
+    margin-top: 19px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-left: 25px;
+}
+
+.aplicativo button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+footer{
+    width: 100%;
+    color: #ffffff;
+}
+
+#footer_item{
+    background-color: #707070;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
