@@ -1,3 +1,7 @@
+/* Ainda cheio de falhas, lembrar de arrumar,
+talvez por culpa do position relative e absolute... */
+/* Editar as linhas que possuem position */
+
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 *{
@@ -10,12 +14,8 @@
 body{
     display: flex;
     background-color: #303030;
-    
-}
-
-/* Mudar position (right e bottom) */
-main{
     position: absolute;
+    max-width: 1702px;
 }
 
 #nome_logotipo{
@@ -170,7 +170,8 @@ header{
     background-color: #707070;
     box-shadow: 0px 10px 0px #7789D8;
     margin-left: 200px;
-    width: 1000px;
+    width: 1705px;
+    height: 150px;
 }
 
 .nav_bar{
@@ -220,6 +221,7 @@ header{
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
+    margin-left: 1275px;
 }
 
 .nav_item{
@@ -230,7 +232,6 @@ header{
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -252,16 +253,187 @@ header{
     font-size: 15px;
 }
 
+/* Mudar position */
 footer{
-    width: 100%;
+    width: 1701px;
     color: #ffffff;
+    position: absolute;
+    bottom: -600px;
+    margin-left: 202px;
 }
 
 #footer_item{
     background-color: #707070;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 60px 75px; 
+}
+
+#footer_contatos img{
+    margin-left: 45px;
+}
+
+#footer_contatos p{
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+
+#footer_item h1{
+    margin-bottom: 10px;
+}
+
+#footer_media{
+    display: flex;
+    gap: 20px;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_media .footer_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-image: linear-gradient(to right, #B4BFF5,#7789D8);
+    color: #000000;
+    border-radius: 10%;
+    transition: all 0.5s;
 }
 
 
+#footer_media .footer_link:hover{
+    opacity: 0.9;
+}
+
+#footer_media .footer_link i{
+    font-size: 19px;
+}
+
+.footer_lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer_lista .footer_link{
+    color: #c4c4c4;
+    transition: all 0.5s;
+}
+
+.footer_lista .footer_link:hover{
+    color: #6c6cff;
+}
+
+#footer_contato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footer_contato p{
+    color: #c4c4c4;
+}
+
+#input_items{
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#input_items input{
+    all: unset;
+    padding: 7px;
+    width: 100%;
+}
+
+#input_items button{
+    background-color: #7789D8;
+    border: none;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 15px;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#input_items button:hover{
+    opacity: 0.9;
+}
+
+#noticias_contents{
+    display: flex;
+    width: 1500px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #000000a2;
+    flex-direction: column;
+    padding: 20px;
+    bottom: -235px;
+    left: -1600px;
+}
+
+#noticias_contents h1{
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#noticias_items{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#noticias_items img{
+    width: 600px;
+    transition: all 0.5s;
+}
+
+#noticias_items li{
+    display: flex;
+    list-style: none;
+}
+
+.noticias_links{
+    text-decoration: none;
+}
+
+.data{
+    display: flex;
+    margin-top: 25px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.título{
+    display: flex;
+    font-size: 50px;
+    padding: 10px;
+    color: #ffffff;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.subtítulo{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    color: #6c6cff;
+    margin-left: 30px;
+}
+
+#noticias_items img:hover{
+    opacity: 0.9;
+}
+
+#noticias_items span:hover{
+    color: #6c6cff;
+}
 
