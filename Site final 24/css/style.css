@@ -14,7 +14,6 @@ talvez por culpa do position relative e absolute... */
 body{
     display: flex;
     background-color: #303030;
-    position: absolute;
     max-width: 1702px;
 }
 
@@ -170,8 +169,6 @@ header{
     background-color: #707070;
     box-shadow: 0px 10px 0px #7789D8;
     margin-left: 200px;
-    width: 1705px;
-    height: 150px;
 }
 
 .nav_bar{
@@ -202,8 +199,6 @@ header{
     display: flex;
     align-items: center;
     margin-right: 25px;
-    justify-content: flex-end;
-    
 }
 
 .suporte ul{
@@ -214,14 +209,13 @@ header{
 
 .separação_header{
     display: flex;
-    justify-content: space-between;
 }
 
 .suporte_link{
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
-    margin-left: 1275px;
+    margin-left: 1155px;
 }
 
 .nav_item{
@@ -257,8 +251,6 @@ header{
 footer{
     width: 1701px;
     color: #ffffff;
-    position: absolute;
-    bottom: -600px;
     margin-left: 202px;
 }
 
@@ -371,12 +363,13 @@ footer{
     display: flex;
     width: 1500px;
     border-radius: 20px;
-    position: relative;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    justify-content: center;
     background-color: #000000a2;
     flex-direction: column;
     padding: 20px;
-    bottom: -235px;
-    left: -1600px;
 }
 
 #noticias_contents h1{
